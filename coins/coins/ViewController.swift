@@ -12,43 +12,99 @@ class ViewController: UIViewController {
     @IBOutlet weak var ethPrice: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
-        let url = URL(string: "https://api.coinbase.com/v2/prices/ETH-USD/spot")!
-
-        let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
-            guard let data = data else { return }
-//            print(String(data: data, encoding: .utf8)!)
-//            print()
-
-        do {
-                     
-            var ethPrice = ""
-            // make sure this JSON is in the format we expect
-                     // convert data to json
-                     if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
-                         // try to read out a dictionary
-                         //print(json)
-                         if let data = json["data"] as? [String:Any] {
-                            self.ethPrice = data["amount"]! as? UILabel
-                             if let prices = data["prices"] as? [[String:Any]] {
-                                 //print(prices)
-                                 let dict = prices[0]
-                                 //print(dict)
-                                 if let price = dict["price"] as? String{
-                                     //print(price)
-                                 }
-                             }
-                         }
-                     }
-                 } catch let error as NSError {
-                     print("Failed to load: \(error.localizedDescription)")
-                
-                 }
-             }
-
+        let url = "https://api.coinbase.com/v2/prices/ETH-USD/spot"
+        getData(from: url)
+        
+    }
+    
+    private func getData(from url: String) {
+      
+        let task = URLSession.shared.dataTask(with: URL(string: url)!, completionHandler: { data, response, error in
+            
+            guard let data = data, error == nil else {
+                print("something went wrong")
+                return
+            }
+            
+            // have data
+            var result: Response?
+            do {
+                result = try JSONDecoder().decode(Response.self, from: data)
+            }
+            catch {
+                print("failed to convert \(error.localizedDescription)")
+            }
+            
+            guard let json = result else {
+                return
+            }
+            
+            print(json.data)
+            print(json.data.base)
+            print(json.data.currency)
+            print(json.data.amount)
+        })
+        
         task.resume()
     }
-
 }
 
+
+struct Response: Codable {
+    let data: MyResult
+}
+
+struct MyResult: Codable {
+    let base: String
+    let currency: String
+    let amount: String
+}
+
+
+
+/*
+ {
+    "data":{
+        "base":"BTC",
+        "currency":"USD",
+        "amount":"46606.08"
+    }
+ }
+ */
+
+
+
+
+
+//        func getPrice() {
+//
+//
+////        let jsonData: Void = URLSession.shared.dataTask(with: URL(string: "https://api.coinbase.com/v2/prices/ETH-USD/spot")!) {(data, response, error) in
+////            print(String(data: data!, encoding: .utf8)!)
+////        }.resume()
+//
+//        let url = URL(string: "https://api.coinbase.com/v2/prices/ETH-USD/spot")!
+//
+//        let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
+//            guard let data = data else { return }
+//        do {
+//            if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+//                if let data = json["data"] as? [String:Any] {
+//                    if let prices = data["prices"] as? [[String:Any]] {
+//                        let dict = prices[0]
+//                        if (dict["price"] as? String) != nil{
+//                            }
+//                        }
+//                    self.ethPrice.text = data["amount"] as? String
+//                    }
+//                }
+//            } catch let error as NSError {
+//                print("Failed to load: \(error.localizedDescription)")
+//            }
+//        }
+//        task.resume()
+//    }
+//    getPrice()
+//}
+//}
