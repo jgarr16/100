@@ -10,8 +10,11 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var ethPrice: UILabel!
+    @IBOutlet weak var checkButton: UIButton! {
+        getData("https://api.coinbase.com/v2/prices/ETH-USD/spot")
+    }
     override func viewDidLoad() {
-        super.viewDidLoad()
+        //super.viewDidLoad()
         
         let url = "https://api.coinbase.com/v2/prices/ETH-USD/spot"
         getData(from: url)
@@ -19,15 +22,11 @@ class ViewController: UIViewController {
     }
     
     private func getData(from url: String) {
-      
-        let task = URLSession.shared.dataTask(with: URL(string: url)!, completionHandler: { data, response, error in
-            
+        let task = URLSession.shared.dataTask(with: URL(string: url)!, completionHandler: { [self] data, response, error in
             guard let data = data, error == nil else {
                 print("something went wrong")
                 return
             }
-            
-            // have data
             var result: Response?
             do {
                 result = try JSONDecoder().decode(Response.self, from: data)
@@ -35,21 +34,18 @@ class ViewController: UIViewController {
             catch {
                 print("failed to convert \(error.localizedDescription)")
             }
-            
             guard let json = result else {
                 return
             }
-            
-            print(json.data)
-            print(json.data.base)
-            print(json.data.currency)
-            print(json.data.amount)
+            // print(json.data), print(json.data.base), print(json.data.currency)
+            let ethusd = json.data.amount
+            //let formattedValue = "\(ethusd.formatted("$%.02f")"
+            ethPrice.text = String("$\(ethusd)")
         })
-        
         task.resume()
+        
     }
 }
-
 
 struct Response: Codable {
     let data: MyResult
