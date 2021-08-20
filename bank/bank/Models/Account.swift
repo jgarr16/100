@@ -9,4 +9,13 @@ import Foundation
 
 struct Account {
     var balance: Double = 0.0
+    
+    mutating func deposit(_ amount: Double) {
+        self.balance += amount
+    }
+    
+    mutating func withdraw(_ amount: Double) {
+        self.balance -= amount
+    }
 }
+
