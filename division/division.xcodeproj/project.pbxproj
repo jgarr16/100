@@ -15,6 +15,9 @@
 		EE23244226D197C7004B9082 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE23244026D197C7004B9082 /* LaunchScreen.storyboard */; };
 		EE23244D26D197C8004B9082 /* divisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE23244C26D197C8004B9082 /* divisionTests.swift */; };
 		EE23245826D197C8004B9082 /* divisionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE23245726D197C8004B9082 /* divisionUITests.swift */; };
+		EE23246626D1D3AB004B9082 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE23246526D1D3AB004B9082 /* CalculatorBrain.swift */; };
+		EE23246726D1D3AB004B9082 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE23246526D1D3AB004B9082 /* CalculatorBrain.swift */; };
+		EE23246826D1D3AB004B9082 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE23246526D1D3AB004B9082 /* CalculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,7 @@
 		EE23245326D197C8004B9082 /* divisionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = divisionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE23245726D197C8004B9082 /* divisionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = divisionUITests.swift; sourceTree = "<group>"; };
 		EE23245926D197C8004B9082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE23246526D1D3AB004B9082 /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 				EE23243726D197C6004B9082 /* SceneDelegate.swift */,
 				EE23243926D197C6004B9082 /* ViewController.swift */,
 				EE23243B26D197C7004B9082 /* Main.storyboard */,
+				EE23246526D1D3AB004B9082 /* CalculatorBrain.swift */,
 				EE23243E26D197C7004B9082 /* Assets.xcassets */,
 				EE23244026D197C7004B9082 /* LaunchScreen.storyboard */,
 				EE23244326D197C7004B9082 /* Info.plist */,
@@ -260,6 +265,7 @@
 			files = (
 				EE23243A26D197C7004B9082 /* ViewController.swift in Sources */,
 				EE23243626D197C6004B9082 /* AppDelegate.swift in Sources */,
+				EE23246626D1D3AB004B9082 /* CalculatorBrain.swift in Sources */,
 				EE23243826D197C6004B9082 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE23246726D1D3AB004B9082 /* CalculatorBrain.swift in Sources */,
 				EE23244D26D197C8004B9082 /* divisionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE23246826D1D3AB004B9082 /* CalculatorBrain.swift in Sources */,
 				EE23245826D197C8004B9082 /* divisionUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

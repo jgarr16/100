@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let calculatorBrain = CalculatorBrain()
+    
     @IBOutlet weak var div1TextField: UITextField!
     @IBOutlet weak var div2TextField: UITextField!
     @IBOutlet weak var resultLabel: UILabel!
