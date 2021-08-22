@@ -31,4 +31,12 @@ class divisionTests: XCTestCase {
             XCTAssert(error!.domain == "Error dividing by Zero", "Error message should be 'Error dividing by Zero'")
         }
     }
+    
+    func test_TestDivisionTime() {
+        measure {
+            self.calculatorBrain.divideTwoNumbers(dividend: 10, divisor: 2, completion: { (result, error) -> Void in
+                
+            })
+        }
+    }
 }

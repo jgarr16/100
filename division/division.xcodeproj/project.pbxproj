@@ -103,11 +103,11 @@
 		EE23243426D197C6004B9082 /* division */ = {
 			isa = PBXGroup;
 			children = (
+				EE23246526D1D3AB004B9082 /* CalculatorBrain.swift */,
 				EE23243526D197C6004B9082 /* AppDelegate.swift */,
 				EE23243726D197C6004B9082 /* SceneDelegate.swift */,
 				EE23243926D197C6004B9082 /* ViewController.swift */,
 				EE23243B26D197C7004B9082 /* Main.storyboard */,
-				EE23246526D1D3AB004B9082 /* CalculatorBrain.swift */,
 				EE23243E26D197C7004B9082 /* Assets.xcassets */,
 				EE23244026D197C7004B9082 /* LaunchScreen.storyboard */,
 				EE23244326D197C7004B9082 /* Info.plist */,
