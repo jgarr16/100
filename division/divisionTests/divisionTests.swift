@@ -21,8 +21,11 @@ class divisionTests: XCTestCase {
     }
 
     func test_10DividedBy5Result2() {
-        let result = calculatorBrain.divideTwoNumbers(dividend:10, divisor:5)
-        XCTAssert(result == 2, "Result must be 2")
+        let _: () = calculatorBrain.divideTwoNumbers(dividend:10, divisor:5) { (result, error) -> Void in XCTAssert(result == 2, "Result must be 2")
     }
-
+    }
+    func test_10DividedBy0MustBeNil() {
+        let _: () = calculatorBrain.divideTwoNumbers(dividend:10, divisor:0) { (result, error) -> Void in XCTAssertNil(result, "Result must be nil")
+    }
+    }
 }
