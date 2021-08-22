@@ -21,11 +21,14 @@ class divisionTests: XCTestCase {
     }
 
     func test_10DividedBy5Result2() {
-        let _: () = calculatorBrain.divideTwoNumbers(dividend:10, divisor:5) { (result, error) -> Void in XCTAssert(result == 2, "Result must be 2")
-    }
+        calculatorBrain.divideTwoNumbers(dividend:10, divisor:5) { (result, error) -> Void in
+            XCTAssert(result == 2, "Result must be 2")
+        }
     }
     func test_10DividedBy0MustBeNil() {
-        let _: () = calculatorBrain.divideTwoNumbers(dividend:10, divisor:0) { (result, error) -> Void in XCTAssertNil(result, "Result must be nil")
-    }
+        calculatorBrain.divideTwoNumbers(dividend:10, divisor:0) { (result, error) -> Void in
+            XCTAssertNil(result, "Result must be nil")
+            XCTAssert(error!.domain == "Error dividing by Zero", "Error message should be 'Error dividing by Zero'")
+        }
     }
 }
