@@ -10,5 +10,8 @@ import Foundation
 
 class Converter {
     let dictionary = [1:"I"]
-    let translate = dictionary.value[1]
+//    let translate = dictionary.value[1]
+//    let ""
 }
+
+
