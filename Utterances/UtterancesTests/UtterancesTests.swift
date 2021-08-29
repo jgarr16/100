@@ -23,23 +23,12 @@ class UtterancesTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
-    func test_utterancesNotBuenasDias() throws {
-        // confirms that the utterance/phrase is defined correctly
-        let utterances = Utterances()
-        XCTAssertNotEqual(utterances.translations["good morning"],"¡Buenas días!")
-    }
-    
     func test_utterancesIsBuenosDias() throws {
         // confirms that the utterance/phrase is defined correctly
         let utterances = Utterances()
         XCTAssertEqual(utterances.translations["good morning"],"¡Buenos días!")
     }
 
-//    func testPerformanceExample() throws {
-//        // This is an example of a performance test case.
-//        self.measure {
-//            // Put the code you want to measure the time of here.
-//        }
-//    }
-
 }
+
+

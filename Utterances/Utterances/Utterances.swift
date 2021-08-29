@@ -9,7 +9,8 @@ import Foundation
 
 class Utterances {
     var translations:[String:String] = ["good morning": "¡Buenos días!",]
-//    for (key, value) in translations {
-//        print("\(key) : \(value)")
-//    }
 }
+
+
+
+
