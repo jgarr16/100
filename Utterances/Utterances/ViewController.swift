@@ -16,11 +16,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-//        for (key, value) in Utterances.translations {
-//            print("\(key) : \(value)")
-        
     }
-    
-
 }
-
+class Utterances {
+    // properties
+    var engName: String = ""
+    var espName: String = ""
+    // methods
+    // if any
+}

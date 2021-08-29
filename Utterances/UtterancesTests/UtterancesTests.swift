@@ -17,18 +17,18 @@ class UtterancesTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
     
-    func test_utterancesIsBuenosDias() throws {
+    func test_utterancesEngIsEmptyString() throws {
         // confirms that the utterance/phrase is defined correctly
         let utterances = Utterances()
-        XCTAssertEqual(utterances.translations["good morning"],"¡Buenos días!")
+        XCTAssertEqual(utterances.engName,"")
     }
 
+    func test_utterancesEspIsEmptyString() throws {
+        // confirms that the utterance/phrase is defined correctly
+        let utterances = Utterances()
+        XCTAssertEqual(utterances.espName,"")
+    }
 }
 
 
