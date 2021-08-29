@@ -15,9 +15,9 @@
 		EED2830026DB207400ACC884 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED282FE26DB207400ACC884 /* LaunchScreen.storyboard */; };
 		EED2830B26DB207500ACC884 /* UtterancesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED2830A26DB207500ACC884 /* UtterancesTests.swift */; };
 		EED2831626DB207500ACC884 /* UtterancesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED2831526DB207500ACC884 /* UtterancesUITests.swift */; };
-		EED2832726DBE3C500ACC884 /* buenos_dias_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EED2832626DBE3C500ACC884 /* buenos_dias_1.mp3 */; };
-		EED2832926DBE3CE00ACC884 /* buenos_dias_2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EED2832826DBE3CE00ACC884 /* buenos_dias_2.mp3 */; };
-		EED2832B26DBE3DB00ACC884 /* buenos_dias_3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EED2832A26DBE3DB00ACC884 /* buenos_dias_3.mp3 */; };
+		EED2832726DBE3C500ACC884 /* buenosDias_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EED2832626DBE3C500ACC884 /* buenosDias_1.mp3 */; };
+		EED2832926DBE3CE00ACC884 /* buenosDias_2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EED2832826DBE3CE00ACC884 /* buenosDias_2.mp3 */; };
+		EED2832B26DBE3DB00ACC884 /* buenosDias_3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EED2832A26DBE3DB00ACC884 /* buenosDias_3.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +52,9 @@
 		EED2831126DB207500ACC884 /* UtterancesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UtterancesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED2831526DB207500ACC884 /* UtterancesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtterancesUITests.swift; sourceTree = "<group>"; };
 		EED2831726DB207500ACC884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EED2832626DBE3C500ACC884 /* buenos_dias_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = buenos_dias_1.mp3; path = "../../../../../../../Volumes/katchi_syn/Audacity Projects/spanish/buenos_dias_1.mp3"; sourceTree = "<group>"; };
-		EED2832826DBE3CE00ACC884 /* buenos_dias_2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = buenos_dias_2.mp3; path = "../../../../../../../Volumes/katchi_syn/Audacity Projects/spanish/buenos_dias_2.mp3"; sourceTree = "<group>"; };
-		EED2832A26DBE3DB00ACC884 /* buenos_dias_3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = buenos_dias_3.mp3; path = "../../../../../../../Volumes/katchi_syn/Audacity Projects/spanish/buenos_dias_3.mp3"; sourceTree = "<group>"; };
+		EED2832626DBE3C500ACC884 /* buenosDias_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = buenosDias_1.mp3; path = "../../../../../../../Volumes/katchi_syn/Audacity Projects/spanish/buenosDias_1.mp3"; sourceTree = "<group>"; };
+		EED2832826DBE3CE00ACC884 /* buenosDias_2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = buenosDias_2.mp3; path = "../../../../../../../Volumes/katchi_syn/Audacity Projects/spanish/buenosDias_2.mp3"; sourceTree = "<group>"; };
+		EED2832A26DBE3DB00ACC884 /* buenosDias_3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = buenosDias_3.mp3; path = "../../../../../../../Volumes/katchi_syn/Audacity Projects/spanish/buenosDias_3.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,9 +138,9 @@
 		EED2832526DBE31E00ACC884 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				EED2832A26DBE3DB00ACC884 /* buenos_dias_3.mp3 */,
-				EED2832826DBE3CE00ACC884 /* buenos_dias_2.mp3 */,
-				EED2832626DBE3C500ACC884 /* buenos_dias_1.mp3 */,
+				EED2832A26DBE3DB00ACC884 /* buenosDias_3.mp3 */,
+				EED2832826DBE3CE00ACC884 /* buenosDias_2.mp3 */,
+				EED2832626DBE3C500ACC884 /* buenosDias_1.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -249,11 +249,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EED2830026DB207400ACC884 /* LaunchScreen.storyboard in Resources */,
-				EED2832926DBE3CE00ACC884 /* buenos_dias_2.mp3 in Resources */,
+				EED2832926DBE3CE00ACC884 /* buenosDias_2.mp3 in Resources */,
 				EED282FD26DB207400ACC884 /* Assets.xcassets in Resources */,
 				EED282FB26DB207300ACC884 /* Main.storyboard in Resources */,
-				EED2832726DBE3C500ACC884 /* buenos_dias_1.mp3 in Resources */,
-				EED2832B26DBE3DB00ACC884 /* buenos_dias_3.mp3 in Resources */,
+				EED2832726DBE3C500ACC884 /* buenosDias_1.mp3 in Resources */,
+				EED2832B26DBE3DB00ACC884 /* buenosDias_3.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

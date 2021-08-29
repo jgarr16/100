@@ -18,10 +18,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 }
-class Utterances {
+struct Utterances {
     // properties
     var engName: String = ""
     var espName: String = ""
     // methods
     // if any
 }
+
+let buenosDias = Utterances(engName: "good morning", espName: "buenos días")
