@@ -39,7 +39,7 @@
                                     <constraint firstAttribute="width" constant="73" id="J06-mf-jRW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Next">
                                     <color key="titleColor" red="0.67317635669999998" green="0.029133699379999999" blue="0.022825176209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -55,6 +55,21 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRE-TW-2dV">
+                                <rect key="frame" x="0.0" y="709" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="73" id="9fc-gf-8GC"/>
+                                    <constraint firstAttribute="width" constant="73" id="BvY-Cr-ZNl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="0.67317635669999998" green="0.029133699379999999" blue="0.022825176209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ku1-U5-KIl"/>
+                                    <action selector="translateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bsq-BA-VeU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -62,13 +77,17 @@
                             <constraint firstItem="a5O-zi-qsG" firstAttribute="top" secondItem="aod-OF-AYD" secondAttribute="bottom" constant="65" id="6mr-Ct-dw1"/>
                             <constraint firstItem="ANZ-xv-Wud" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9YC-up-Dof"/>
                             <constraint firstItem="ANZ-xv-Wud" firstAttribute="top" secondItem="a5O-zi-qsG" secondAttribute="bottom" constant="200" id="Mzh-mG-amr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aRE-TW-2dV" secondAttribute="trailing" id="P7s-Wc-xQ5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a5O-zi-qsG" secondAttribute="trailing" id="Pa4-7M-owH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ANZ-xv-Wud" secondAttribute="trailing" id="QO9-bS-vtG"/>
                             <constraint firstItem="ANZ-xv-Wud" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WB4-Cs-1KO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aod-OF-AYD" secondAttribute="trailing" id="e9m-hE-4cG"/>
                             <constraint firstItem="aod-OF-AYD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="250" id="h4O-fk-RXv"/>
                             <constraint firstItem="aod-OF-AYD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="idd-zM-zdS"/>
+                            <constraint firstItem="aRE-TW-2dV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jqV-8P-3Kc"/>
                             <constraint firstItem="a5O-zi-qsG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="o2n-8O-nax"/>
+                            <constraint firstItem="aRE-TW-2dV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="u98-gs-UJH"/>
+                            <constraint firstItem="aRE-TW-2dV" firstAttribute="top" secondItem="ANZ-xv-Wud" secondAttribute="bottom" constant="38" id="uc7-mt-Fet"/>
                             <constraint firstItem="a5O-zi-qsG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vp2-Kn-g57"/>
                         </constraints>
                     </view>

@@ -30,12 +30,14 @@ class UtterancesTests: XCTestCase {
         XCTAssertEqual(utterances.espName,"")
     }
     
-    func test_buenosDiasEnglish() throws {
+    func test_buenosDiasEng() throws {
+        let utterances = Utterances()
         XCTAssertEqual(buenosDias.engName,"good morning")
     }
     
-    func test_buenosDiasEspanol() throws {
-        XCTAssertEqual(buenosDias.espName,"buenos días")
+    func test_buenosDiasEsp() throws {
+        let utterances = Utterances()
+        XCTAssertEqual(utterances.espName,"buenos días")
     }
 }
 
